@@ -153,7 +153,7 @@ const App: React.FC = () => {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => setCurrentView('home')}>
             <div className={`w-10 h-10 rounded-xl bg-${primaryColorClass}-600 flex items-center justify-center text-white shadow-lg`}>
-              <LucideHeartHandshake className="w-6 h-6" />
+              <img src={ogahLogo} alt="Logo" className="w-6 h-6 object-contain" />
             </div>
             <span className="font-black text-xl tracking-tighter text-slate-800">
               {layout.foundationName ? layout.foundationName.split(' ')[0] : 'Ogah'} <span className={`text-${primaryColorClass}-600`}>Foundation</span>
