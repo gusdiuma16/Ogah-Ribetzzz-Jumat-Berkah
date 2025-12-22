@@ -1,5 +1,5 @@
 
-# Jadi Gini Pa, ini masi trial
+# Jadi Gini Pal, ini masi trial
 
 This contains everything you need to run your app locally.
 
