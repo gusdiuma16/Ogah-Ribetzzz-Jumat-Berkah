@@ -4,7 +4,7 @@ export interface Income {
   donorName: string;
   amount: number;
   date: string;
-  proofImage?: string; // Base64 or URL of the transfer proof
+  proofImage?: string;
 }
 
 export interface Expense {
@@ -22,6 +22,21 @@ export interface Distribution {
   date: string;
 }
 
+export interface Article {
+  id: string;
+  title: string;
+  content: string;
+  date: string;
+  imageUrl: string;
+}
+
+export interface GalleryItem {
+  id: string;
+  url: string;
+  caption: string;
+  type: 'image' | 'video';
+}
+
 export interface LayoutConfig {
   primaryColor: 'emerald' | 'blue' | 'indigo' | 'rose' | 'amber' | 'slate';
   fontFamily: 'Plus Jakarta Sans' | 'Inter' | 'Merriweather' | 'Roboto Mono';
@@ -30,18 +45,28 @@ export interface LayoutConfig {
   borderRadius: 'rounded-none' | 'rounded-xl' | 'rounded-3xl' | 'rounded-[3rem]';
   headerStyle: 'gradient' | 'solid';
   themeMode: 'light' | 'soft';
-  // Donation Features
   showDonationSection: boolean;
   qrisImageUrl: string;
   donationTitle: string;
   donationDescription: string;
+  // Foundation Branding
+  foundationName: string;
+  foundationDescription: string;
+  aboutUs: string;
+  vision: string;
+  mission: string;
+  goals: string;
+  instagramUrl: string;
 }
 
-export type ViewType = 'public' | 'admin';
+export type AppView = 'home' | 'transparency' | 'gallery' | 'articles' | 'admin';
 
 export interface AppData {
   incomes: Income[];
+  pendingIncomes: Income[];
   expenses: Expense[];
   distributions: Distribution[];
+  articles: Article[];
+  gallery: GalleryItem[];
   layout: LayoutConfig;
 }
