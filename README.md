@@ -1,5 +1,5 @@
 
-# Run and deploy your Ogah Ribet Fondation
+# Jadi Gini Pa, ini masi trial
 
 This contains everything you need to run your app locally.
 
