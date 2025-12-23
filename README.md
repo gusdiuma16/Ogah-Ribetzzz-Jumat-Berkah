@@ -9,5 +9,5 @@ View your app in : https://ogah-ribetzzz-jumat-berkah.vercel.app/
 
 
 ### Admin & Pasword
-Username : ogahribet
-Pasword : jaticempaka16
+Username : 'ogahribet'
+Pasword : 'jaticempaka16'
